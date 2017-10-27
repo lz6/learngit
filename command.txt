@@ -25,3 +25,7 @@ git log --pretty=oneline
 git checkout -b dev
 git branch dev
 git checkout dev
+
+9.查看分支,切换分支
+git branch
+git checkout dev 
