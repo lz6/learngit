@@ -21,5 +21,7 @@ git commit -m "comment"
 7.log
 git log --pretty=oneline
 
+8.创建dev分支，然后切换到dev分支
+git checkout -b dev
 git branch dev
 git checkout dev
