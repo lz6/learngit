@@ -29,3 +29,23 @@ git checkout dev
 9.查看分支,切换分支
 git branch
 git checkout dev 
+
+10.合并分支,用于合并指定分支到当前分支
+git merge dev
+
+合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。
+git merge --no-ff -m "merge with no-ff" dev
+11.删除分支
+git branch -d dev
+
+12.把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+git stash
+git stash list
+git stash apply stash@{0}
+一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
+另一种方式是用git stash pop，恢复的同时把stash内容也删了
+
+13.查看工作区和版本库里面最新版本的区别
+git diff HEAD -- file
+
+14.
