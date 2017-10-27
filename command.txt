@@ -20,3 +20,6 @@ git commit -m "comment"
 
 7.log
 git log --pretty=oneline
+
+git branch dev
+git checkout dev
